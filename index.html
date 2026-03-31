@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HEPTHEX — Artist · DJ · VJ · Cinematographer · Developer</title>
+<title>HEPTHEX</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -960,7 +960,7 @@
   <div class="hero-glow-r"></div>
 
   <div class="hero-content">
-    <p class="hero-tag">[ hepthex.com — Est. 2024 ]</p>
+    <p class="hero-tag">[ hepthex.com — Est. 2026 ]</p>
     <h1 class="hero-title">
       <span class="glitch">HEPTHEX</span>
     </h1>
@@ -1469,7 +1469,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-logo">HEPTHEX</div>
-      <p class="footer-copy">© 2024 <a href="https://hepthex.com">hepthex.com</a> — All rights reserved</p>
+      <p class="footer-copy">© <span id="year"></span> <a href="https://hepthex.com">hepthex.com</a> — All rights reserved</p>
       <div class="footer-social">
         <a href="#" class="social-btn">IG</a>
         <a href="#" class="social-btn">SC</a>
@@ -1481,6 +1481,9 @@
 </footer>
 
 <script>
+  // AUTO-UPDATE FOOTER YEAR
+  document.getElementById('year').textContent = new Date().getFullYear();
+
   // CURSOR
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursor-ring');
