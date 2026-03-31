@@ -1436,25 +1436,29 @@
 
       <div class="reveal">
         <p class="section-label">Send Message</p>
-        <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="28e812bc-fad7-4eb9-80ca-18e01a3460ab">
+          <input type="hidden" name="to_email" value="connect@hepthex.com">
+          <input type="hidden" name="from_name" value="HEPTHEX Contact Form">
+          
           <div class="form-group">
             <label class="form-label">Name</label>
-            <input type="text" class="form-input" placeholder="Your name">
+            <input type="text" name="name" class="form-input" placeholder="Your name" required>
           </div>
           <div class="form-group">
             <label class="form-label">Email</label>
-            <input type="email" class="form-input" placeholder="your@email.com">
+            <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">Project Type</label>
-            <input type="text" class="form-input" placeholder="DJ / Film / Web / VJ / Other">
+            <input type="text" name="project_type" class="form-input" placeholder="DJ / Film / Web / VJ / Other">
           </div>
           <div class="form-group">
             <label class="form-label">Message</label>
-            <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
+            <textarea name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
           </div>
-          <button class="btn btn-primary" style="width:fit-content"><span>Send Transmission →</span></button>
-        </div>
+          <button type="submit" class="btn btn-primary" style="width:fit-content"><span>Send Transmission →</span></button>
+        </form>
       </div>
     </div>
   </div>
