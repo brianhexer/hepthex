@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | HEPTHEX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">HEPT<span>HEX</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="works.html">Works</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="page-shell">
+  <section class="page-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-scanline"></div>
+    <div class="container page-hero-inner">
+      <p class="section-label reveal">Contact</p>
+      <h1 class="page-title reveal">Ready to Build Something <span class="accent">Extraordinary</span>?</h1>
+      <p class="page-lead reveal">Send a project brief or reach out through any of the direct channels below.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-layout">
+      <div class="reveal">
+        <div class="contact-big">Let’s create a <span class="accent">clear next step</span> for your project.</div>
+        <div class="contact-links">
+          <a href="mailto:connect@hepthex.com" class="contact-link"><span class="contact-link-icon">✉</span> connect@hepthex.com</a>
+          <a href="https://instagram.com/hepthex" class="contact-link"><span class="contact-link-icon">◎</span> instagram.com/hepthex</a>
+          <a href="https://soundcloud.com/hepthex" class="contact-link"><span class="contact-link-icon">◉</span> soundcloud.com/hepthex</a>
+          <a href="https://github.com/hepthex" class="contact-link"><span class="contact-link-icon">◈</span> github.com/hepthex</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="section-label">Send Message</p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="28e812bc-fad7-4eb9-80ca-18e01a3460ab">
+          <input type="hidden" name="to_email" value="connect@hepthex.com">
+          <input type="hidden" name="from_name" value="HEPTHEX Contact Form">
+
+          <div class="form-group">
+            <label class="form-label">Company/Name</label>
+            <input type="text" name="name" class="form-input" placeholder="Your company or name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-input" placeholder="your@company.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Service Needed</label>
+            <input type="text" name="project_type" class="form-input" placeholder="Web Dev / Event / Film / Music / Other">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Project Details</label>
+            <textarea name="message" class="form-textarea" placeholder="Tell us about your project, requirements, and timeline..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:fit-content"><span>Start Your Project →</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">HEPTHEX</div>
+    <p class="footer-copy">© <span id="year"></span> HEPTHEX — Founded by Brian Hexer</p>
+    <div class="footer-social"><a href="index.html" class="social-btn">HOME</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
